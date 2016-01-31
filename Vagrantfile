@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "precise64"
+  config.vm.box = "ubuntu/precise64"
   config.vm.provision "puppet" do |puppet|
 	  puppet.manifests_path = "puppet/manifests"
 	  puppet.module_path = "puppet/modules"
